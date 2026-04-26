@@ -41,6 +41,12 @@ updateDrink(id, drinkId, updatedDrink) {
     this.store.editItem(this.collection, id, drinkId, this.array, updatedDrink);
 },
 
+searchDrinkCollections(search) {
+    return this.store.findBy(
+      this.collection,
+      (drinkCollection => drinkCollection.title.toLowerCase().includes(search.toLowerCase())))
+}
+
 
 };
 

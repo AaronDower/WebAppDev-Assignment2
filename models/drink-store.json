@@ -10,6 +10,43 @@
           "description": "Italian Beer"
         }
       ]
+    },
+    {
+      "id": "204aad6f-3824-4d11-82ea-ea8a92b85d59",
+      "title": "Wine",
+      "drinks": [
+        {
+          "id": "a1a71ee9-dad3-430f-a385-4bcc811d69b8",
+          "name": "Red wine",
+          "description": "i have no idea"
+        },
+        {
+          "id": "d16ce145-3b9b-4e40-9eec-ae693e018ee0",
+          "name": "white wine",
+          "description": "couldnt tell you the difference"
+        }
+      ]
+    },
+    {
+      "id": "6a8e29b0-5ce6-43e1-9434-d9904e3b6980",
+      "title": "ales",
+      "drinks": [
+        {
+          "id": "10195bc3-3147-4161-b333-83edd397398b",
+          "name": "brewdog ",
+          "description": "ipa"
+        },
+        {
+          "id": "e7b0b82a-b769-4afe-a0b5-3d40ce222b20",
+          "name": "smithwicks",
+          "description": "shite red ale"
+        },
+        {
+          "id": "7f454a08-438a-43a2-9b22-61bd8757523d",
+          "name": "o'haras",
+          "description": "good ale brewery"
+        }
+      ]
     }
   ]
 }
