@@ -1,0 +1,21 @@
+{{> menu}}
+
+{{#with singleDrink}}
+
+  <section class="ui center aligned middle aligned scrolling segment">
+
+    <h2 class="ui header">
+      {{name}}
+    </h2>
+
+    {{> listdrinks}}
+
+  </section>
+
+  <section class="ui center aligned middle aligned segment">
+
+    {{> adddrink}}
+
+  </section>
+
+{{/with}}

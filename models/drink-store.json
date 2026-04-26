@@ -1,0 +1,15 @@
+{
+  "drinkCollection": [
+    {
+      "id": "3e5592a1-e307-4d68-b3d3-d0bd57b90228",
+      "title": "Beer",
+      "drinks": [
+        {
+          "id": "d9a00ed2-af7e-458e-800e-7652c076e354",
+          "name": "Peroni",
+          "description": "Italian Beer"
+        }
+      ]
+    }
+  ]
+}

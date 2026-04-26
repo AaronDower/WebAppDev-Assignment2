@@ -1,0 +1,15 @@
+<form class="ui stacked segment form" action="/drink/{{id}}" method="POST">
+  <div class="two fields">
+    <div class="field">
+      <label>Name</label>
+      <input type="text" name="name" autofocus required title = "Please include a valid Name"
+	  placeholder="Name">
+    </div>
+    <div class="field">
+      <label>Description</label>
+      <input type="text" name="description" required title = "Please include a valid Description"
+	  placeholder="Description"  >
+    </div>
+  </div>
+  <button class="ui blue submit button">Add Drink</button>
+</form>

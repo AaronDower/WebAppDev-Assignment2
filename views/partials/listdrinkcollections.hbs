@@ -1,0 +1,36 @@
+<section class="ui left aligned middle aligned segment">
+  
+  <h2>Drink Collection App Dashboard</h2>
+  
+  {{#unless drinks}}
+    <h3 class="ui message">
+      Start adding your drinks!
+    </h3>
+  {{/unless}}
+
+  {{#each drinks}}
+    <section class="ui left aligned middle aligned segment">
+
+      <h3 class="ui header">
+        {{title}}
+      </h3>
+      
+      {{#if drinks}}
+        <p>
+          Total drinks: {{drinks.length}}
+        </p>
+      {{else}}
+        <p>
+          Empty drink collection!
+        </p>
+      {{/if}}
+	  <a href="/drink/{{id}}">
+	     <i class = "ui open folder outline black icon"></i>
+	  </a>
+      <a href="/dashboard/delete/{{id}}">
+  <i class="ui trash black icon"></i>
+</a>
+    </section>
+  {{/each}}
+
+</section>

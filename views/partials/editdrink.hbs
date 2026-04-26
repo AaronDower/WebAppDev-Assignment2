@@ -1,0 +1,31 @@
+<form class="ui stacked segment form" method="POST" action="/drink/{{drinkId}}/updatedrink/{{id}}" >
+  <tr class="hide" id="edit{{@index}}">
+    <td>
+        
+      <span class="ui input">
+        <input type="text" name="name" autofocus required
+          title="Please include a valid Name" 
+		  placeholder="Name" value="{{name}}">
+      </span>
+    </td>
+    <td>
+      <span class="ui input">
+        <input type="text" name="description" required 
+               title="Please include a valid Description" 
+			   placeholder="Description" value="{{description}}">
+      </span>
+    </td>
+    <td class="center aligned">
+      <button type = "reset" class = "editSubmit" id="hideEdit{{@index}}"
+	          title="Exit without saving">
+        <i class="ui undo icon"></i>
+      </button>
+    </td>
+    <td class="center aligned">
+      <button type = "submit" class = "editSubmit" 
+	          title="Save changes">
+        <i class="ui save icon"></i>
+      </button>
+    </td>
+  </tr>
+</form>

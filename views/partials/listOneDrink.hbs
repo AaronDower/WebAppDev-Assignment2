@@ -1,0 +1,20 @@
+<tr id="drink{{@index}}">
+  <td >
+    {{name}}
+  </td>
+  <td>
+    {{description}}
+  </td>
+
+  <td class="center aligned">
+    <button title="Edit drink" class = "editSubmit" id="showEdit{{@index}}">
+      <i class="ui pencil icon"></i>
+    </button>
+  </td>
+  <td class="center aligned">
+    <a href="/drink/{{drinkId}}/deletedrink/{{id}}" 
+	   title="Delete drink">
+      <i class="ui black trash icon"></i>
+    </a>
+  </td>
+</tr>
