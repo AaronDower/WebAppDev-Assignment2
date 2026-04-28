@@ -1,0 +1,27 @@
+         <div class="ui card">
+        <div class="image">
+          <img src="{{picture.url}}">
+        </div>
+        <div class="content">
+          <a class="header">{{title}}</a> 
+          <p>
+            <i class="wine glass icon"></i>
+            {{#if drinks}}
+              Total drinks: {{drinks.length}}
+            {{else}}
+              Empty drink collection!
+            {{/if}}
+
+           
+        </div>
+        
+        <div class="extra content">
+          <a href="/drinks/{{id}}" >
+            <i class="ui open folder outline black icon"></i>
+          </a>
+          <a href="/dashboard/deleteDrinkCollection/{{id}}" >
+            <i class="ui black trash icon"></i>
+          </a>
+        </div>
+          
+      </div>

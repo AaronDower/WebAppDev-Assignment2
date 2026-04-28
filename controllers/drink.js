@@ -3,19 +3,23 @@
 import logger from '../utils/logger.js';
 import drinkStore from '../models/drink-store.js';
 import { v4 as uuidv4 } from 'uuid';
+import accounts from './accounts.js';
 
 const drink = {
   createView(request, response) {
     const drinkId = request.params.id;
-    logger.debug(`Drink id = ${drinkId}`);
+    const loggedInUser = accounts.getCurrentUser(request);
+    logger.debug('Drink id = ' + drinkId);
     
     const viewData = {
       title: 'Drink',
-      singleDrink: drinkStore.getDrink(drinkId)
+      singleDrink: drinkStore.getDrink(drinkId),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
 
     response.render('drink', viewData);
-  },
+},
+
 
   addDrink(request, response) {
     const drinkCollectionId = request.params.id;

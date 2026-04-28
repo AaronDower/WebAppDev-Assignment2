@@ -2,10 +2,17 @@
 
 import logger from "../utils/logger.js";
 import drinkStore from "../models/drink-store.js"; // Ensure this model exists
+import accounts from './accounts.js';
 
 const stats = {
   createView(request, response) {
-    logger.info("Drink Stats page loading!");
+    const loggedInUser = accounts.getCurrentUser(request);
+    
+    if (!loggedInUser) {
+      response.redirect('/');
+      return;
+    }
+    logger.info("Stats page loading!");
 
     
     const collections = drinkStore.getAllDrinks();

@@ -25,16 +25,24 @@ addDrink(id, drink) {
     this.store.addItem(this.collection, id, this.array, drink);
 },
 
-addDrinkCollection(drinkCollection) {
-    this.store.addCollection(this.collection, drinkCollection);
-},
+  async addDrinkCollection(drinkCollection, file, response) {
+    try {
+      drinkCollection.picture = await this.store.addToCloudinary(file);
+      this.store.addCollection(this.collection, drinkCollection);
+      response();
+    } catch (error) {
+      logger.error("Error processing drink collection:", error);
+      response(error);
+    }
+  },
+
 
 removeDrink(id, drinkId) {
     this.store.removeItem(this.collection, id, this.array, drinkId);
 },
 
-async removeDrinkCollection(id) { // Add async
-   await this.store.removeCollection(this.collection, id); // Add await
+async removeDrinkCollection(id) { 
+   await this.store.removeCollection(this.collection, id); 
 },
 
 updateDrink(id, drinkId, updatedDrink) {
@@ -45,7 +53,18 @@ searchDrinkCollections(search) {
     return this.store.findBy(
       this.collection,
       (drinkCollection => drinkCollection.title.toLowerCase().includes(search.toLowerCase())))
-}
+},
+
+getUserDrinks(userid) {
+  return this.store.findBy(this.collection, (drinkCollection => drinkCollection.userid === userid));
+},
+
+searchUserDrinks(search, userid) {
+  return this.store.findBy(
+    this.collection,
+    (drinkCollection => drinkCollection.userid === userid && drinkCollection.title.toLowerCase().includes(search.toLowerCase())))
+}, 
+
 
 
 };

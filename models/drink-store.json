@@ -1,52 +1,26 @@
 {
   "drinkCollection": [
     {
-      "id": "3e5592a1-e307-4d68-b3d3-d0bd57b90228",
-      "title": "Beer",
-      "drinks": [
-        {
-          "id": "d9a00ed2-af7e-458e-800e-7652c076e354",
-          "name": "Peroni",
-          "description": "Italian Beer"
-        }
-      ]
+      "id": "71d3e1da-002e-4b6b-82c2-25a36295acb0",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "asd",
+      "drinks": [],
+      "date": "2026-04-28T14:53:51.065Z",
+      "picture": {
+        "url": "http://res.cloudinary.com/dfbqllrdk/image/upload/v1777388030/o0somgvcbzkicurpif0p.jpg",
+        "public_id": "o0somgvcbzkicurpif0p"
+      }
     },
     {
-      "id": "204aad6f-3824-4d11-82ea-ea8a92b85d59",
-      "title": "Wine",
-      "drinks": [
-        {
-          "id": "a1a71ee9-dad3-430f-a385-4bcc811d69b8",
-          "name": "Red wine",
-          "description": "i have no idea"
-        },
-        {
-          "id": "d16ce145-3b9b-4e40-9eec-ae693e018ee0",
-          "name": "white wine",
-          "description": "couldnt tell you the difference"
-        }
-      ]
-    },
-    {
-      "id": "6a8e29b0-5ce6-43e1-9434-d9904e3b6980",
-      "title": "ales",
-      "drinks": [
-        {
-          "id": "10195bc3-3147-4161-b333-83edd397398b",
-          "name": "brewdog ",
-          "description": "ipa"
-        },
-        {
-          "id": "e7b0b82a-b769-4afe-a0b5-3d40ce222b20",
-          "name": "smithwicks",
-          "description": "shite red ale"
-        },
-        {
-          "id": "7f454a08-438a-43a2-9b22-61bd8757523d",
-          "name": "o'haras",
-          "description": "good ale brewery"
-        }
-      ]
+      "id": "7f3a1f26-3266-4998-817b-153a8481cb78",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "asdfghjk",
+      "drinks": [],
+      "date": "2026-04-28T14:54:33.999Z",
+      "picture": {
+        "url": "http://res.cloudinary.com/dfbqllrdk/image/upload/v1777388073/udlycr3j96imdvnr9ent.png",
+        "public_id": "udlycr3j96imdvnr9ent"
+      }
     }
   ]
 }

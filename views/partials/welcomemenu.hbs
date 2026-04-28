@@ -1,0 +1,26 @@
+<style>
+  header.ui.header.item {
+      font-size: 1.7em;
+      font-weight: bold;
+      color: black;
+  }
+   nav.ui.menu {
+      background-color: lightsteelblue;
+  }
+
+  div.right.menu a.item {
+      font-size: 1.2em;
+      color: black;
+  }
+</style>
+<nav class="ui menu">
+  <header class="ui header item"> <a href="/"> Drinks Collection App </a></header>
+  <div class="right menu">
+    <a id="signup" class="item" href="/signup"> Signup  </a>
+    <a id="login" class="item" href="/login">  Login   </a>
+  </div>
+</nav>
+
+<script>
+   document.querySelector("#{{id}}").classList.add("active");
+</script>

@@ -1,7 +1,30 @@
-<form class="ui stacked segment form" action="/dashboard/adddrinkcollection" method="POST">
-  <div class="field">
-    <label>Title</label>
-    <input placeholder="Title" type="text" name="title" autofocus required>
+<style>
+  form.ui.stacked.segment {
+      background-color: rgb(113, 203, 211);
+      padding: 10px;
+      border: 2px solid black;
+      
+    }
+</style>
+
+
+<form class="ui stacked segment form" action="/dashboard/addDrinkCollection" method="POST" enctype="multipart/form-data">
+
+  <div class="three fields">
+    
+    <div class="field">
+      <label>Title</label>
+      <input placeholder="Title" type="text" name="title" autofocus required>
+    </div>
+    
+    
+      <div class="field">
+      <label>Image</label>
+      <input placeholder="Image" type="file" name="picture" required>
+    </div>
+    
   </div>
- <button class="ui blue submit button">Add Drink Collection</button>
+
+  <button class="ui light blue submit button">Add Drink Collection</button>
+
 </form>
