@@ -1,26 +1,3 @@
 {
-  "drinkCollection": [
-    {
-      "id": "71d3e1da-002e-4b6b-82c2-25a36295acb0",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "asd",
-      "drinks": [],
-      "date": "2026-04-28T14:53:51.065Z",
-      "picture": {
-        "url": "http://res.cloudinary.com/dfbqllrdk/image/upload/v1777388030/o0somgvcbzkicurpif0p.jpg",
-        "public_id": "o0somgvcbzkicurpif0p"
-      }
-    },
-    {
-      "id": "7f3a1f26-3266-4998-817b-153a8481cb78",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "asdfghjk",
-      "drinks": [],
-      "date": "2026-04-28T14:54:33.999Z",
-      "picture": {
-        "url": "http://res.cloudinary.com/dfbqllrdk/image/upload/v1777388073/udlycr3j96imdvnr9ent.png",
-        "public_id": "udlycr3j96imdvnr9ent"
-      }
-    }
-  ]
+  "drinkCollection": []
 }

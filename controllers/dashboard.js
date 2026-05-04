@@ -76,15 +76,6 @@ const dashboard = {
   },
 
 
-  //addDrinkCollection(request, response) {
-    //const newDrinkCollection = {
-      //id: uuidv4(),
-      //title: request.body.title,
-      //drinks: [],
-    //};
-    //drinkStore.addDrinkCollection(newDrinkCollection);
-   // response.redirect('/dashboard');
-//},
 
 async deleteDrinkCollection(request, response) { 
     const drinkCollectionId = request.params.id;

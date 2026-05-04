@@ -25,10 +25,11 @@ router.get('/logout', accounts.logout);
 router.post('/register', accounts.register);
 router.post('/authenticate', accounts.authenticate);
 
-router.post('/drink/:id', drink.addDrink);
+router.get('/drinks/:id', drink.createView);
 router.post('/dashboard/adddrinkcollection', dashboard.addDrinkCollection)
+router.post('/addDrink/:id', drink.addDrink);
 router.post('/drink/:id/updatedrink/:drinkid', drink.updateDrink);
 router.get('/drink/:id/deletedrink/:drinkid', drink.deleteDrink);
-router.get('/dashboard/delete/:id', dashboard.deleteDrinkCollection);
+router.get('/dashboard/deleteDrinkCollection/:id', dashboard.deleteDrinkCollection);
 router.get('/stats', stats.createView);
 export default router;

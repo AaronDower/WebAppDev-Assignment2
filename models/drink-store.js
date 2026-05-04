@@ -41,8 +41,8 @@ removeDrink(id, drinkId) {
     this.store.removeItem(this.collection, id, this.array, drinkId);
 },
 
-async removeDrinkCollection(id) { 
-   await this.store.removeCollection(this.collection, id); 
+removeDrinkCollection(id) { 
+   this.store.removeCollection(this.collection, id); 
 },
 
 updateDrink(id, drinkId, updatedDrink) {
